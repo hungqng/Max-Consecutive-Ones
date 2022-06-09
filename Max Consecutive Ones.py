@@ -13,3 +13,6 @@ class Solution:
             else:
                 count = 0
         return res
+
+        # Solution 2
+        return max(sum(g) for _, g in groupby(nums))
